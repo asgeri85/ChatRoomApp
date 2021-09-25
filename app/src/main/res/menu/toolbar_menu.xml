@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_chatRoom"
+        android:title="Sohnet Odaları" />
+    <item
+        android:id="@+id/action_profile"
+        android:title="Profil" />
+    <item
+        android:id="@+id/action_exit"
+        android:title="Çıkış Yap" />
+</menu>

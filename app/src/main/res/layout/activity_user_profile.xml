@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.UserProfileActivity">
+
+    <EditText
+        android:id="@+id/editUserProfilName"
+        android:layout_width="330dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="238dp"
+        android:ems="10"
+        android:hint="Kullanıcı adınızı giriniz"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editUserTel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editUserProfilMail"
+        android:layout_width="330dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="Mail Adresinizi giriniz"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editUserProfilName" />
+
+    <Button
+        android:id="@+id/buttonProfilPassReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="103dp"
+        android:text="Şifreyi Sıfırla"
+        app:layout_constraintEnd_toStartOf="@+id/buttonProfilUpdate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editUserProfilMail" />
+
+    <Button
+        android:id="@+id/buttonProfilUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="32dp"
+        android:text="Kaydet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editUserProfilMail" />
+
+    <EditText
+        android:id="@+id/editUserTel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginBottom="244dp"
+        android:ems="10"
+        android:hint="Telefon Numarası"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonProfilPassReset" />
+
+    <ImageView
+        android:id="@+id/imageViewUserProfil"
+        android:layout_width="143dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="243dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="63dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonProfilUpdate"
+        app:srcCompat="@drawable/ic_baseline_account_circle_24" />
+
+    <ProgressBar
+        android:id="@+id/progressBarİmage"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewUserProfil"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewUserProfil"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="@+id/imageViewUserProfil"
+        app:layout_constraintTop_toTopOf="@+id/imageViewUserProfil" />
+
+    <ProgressBar
+        android:id="@+id/progressUserprofil"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="138dp"
+        android:layout_height="90dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
